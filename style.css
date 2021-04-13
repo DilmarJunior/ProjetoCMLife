@@ -1,0 +1,328 @@
+/* ------ Inicio - Estilo Global ------ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Source sans pro";
+    color: #0000008c;
+}
+
+/* ------ Fim - Estilo Global ------ */
+
+/* ------- Inicio - Estilo Cabeçalho ------ */
+header {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: #00cad1;
+}
+
+.header {
+    width: 1024px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+}
+
+
+.header a:hover {
+    color: black;
+}
+
+.header nav a {
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+.logo {
+    height: 55px;
+}
+
+.logo img{
+    max-height: 110%;
+}
+
+/* ------ Fim - Estilo Cabeçalho ------ */
+
+/* ------ Inicio - Estilo Conteudo ------ */
+
+.subTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subTitle p {
+    margin-top: 20px;
+    text-align: center;
+    width: 70%;
+    font-size: 1.2em;
+}
+
+
+/* Inicio - Estilo Section Banner */
+
+#banner {
+    background-image: url(assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.MainTitle {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MainTitle h1 {
+    color: white;
+    
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+/* Fim - Estilo Section Banner */
+/* Inicio - Estilo div aboutClinic */
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutClinic {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 10px 0;
+    padding: 10px;
+}
+
+.contentDivison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentDivison div {
+    margin: 20px 5px;
+}
+
+.contentDivison div:nth-child(2n){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentDivison div h4 {
+    margin-bottom: 20px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.contentDivison div ul {
+    align-self: flex-end;
+}
+
+/* Fim - Estilo div aboutClinic */
+/* Inicio - Estilo div middleContent*/
+
+#middleContent {
+    width: 1024px;
+}
+
+.specialtiesFigures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+.specialtiesFigures figure  {
+    width:  301px;
+
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.specialtiesFigures figure  figcaption{
+
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 12px;
+
+}
+.specialtiesFigures figure img{
+    width: 301px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} 
+
+#middleContent div:nth-child(3n){
+   display: flex;
+   justify-content: center;
+   margin: 30px;
+}
+
+#middleContent div:nth-child(3n) a {
+    text-decoration: none;
+    border-radius: 5px;
+
+    background-color: #00cad1;
+    border: none;
+    color: white;
+   
+
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 11px 20px;
+
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+}
+
+
+#middleContent div:nth-child(3n) a:active {
+    background-color: #02a4aa;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+/* Fim - Estilo div middleContent */
+/* Inicio - Estilo div clinicalContact*/
+
+#clinicalContact {
+    margin: 20px 0;
+}
+
+#clinicalContact div:nth-child(2n){
+    margin-top: 20px;
+
+}
+/* Fim - Estilo div clinicalContact */
+/* ------ Fim - Estilo Conteudo ------ */
+
+/* ------ Inicio - Estilo Rodapé ------ */
+footer {
+    background-color: #0d6e71;
+    display: flex;
+    justify-content: center;
+}
+
+.footer  {
+    width: 1024px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer div p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 22px;
+}
+
+.footerLogo img {
+    width: 140px;
+    margin: 15px;
+}
+
+/* ------- Adicionando responsividade à pagina Home ------ */
+
+@media (max-width: 425px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header nav {
+        border-top: 2px solid rgba(3, 130, 134, 0.5);
+
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .header .logo {
+        padding: 20px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    .MainTitle h1 {
+        font-size: 1.5em;
+    }
+
+    .contentDivison img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #banner {
+        height: 200px;
+    }
+
+    .MainTitle h1 {
+        font-size: 1.8em;
+    }
+
+    .contentDivison img {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #banner {
+        height: 400px;
+    }
+
+    .MainTitle h1 {
+        font-size: 2.0em;
+    }
+}
+
+@media (max-width: 920px) {
+    .specialtiesFigures figure {
+        margin: 20px 20px 30px 20px;
+    }
+}
