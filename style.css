@@ -8,6 +8,18 @@
     color: #0000008c;
 }
 
+.width1024 {
+    width: 1024px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-spacing: 0px;
+}
 /* ------ Fim - Estilo Global ------ */
 
 /* ------- Inicio - Estilo Cabeçalho ------ */
@@ -19,7 +31,6 @@ header {
 }
 
 .header {
-    width: 1024px;
     height: 100%;
 
     display: flex;
@@ -84,7 +95,6 @@ header {
 }
 
 .MainTitle {
-    width: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,13 +111,8 @@ header {
 /* Fim - Estilo Section Banner */
 /* Inicio - Estilo div aboutClinic */
 
-.content {
-    display: flex;
-    justify-content: center;
-}
 
 #aboutClinic {
-    width: 1024px;
     display: flex;
     flex-direction: column;
     margin: 40px 0 10px 0;
@@ -144,10 +149,6 @@ header {
 
 /* Fim - Estilo div aboutClinic */
 /* Inicio - Estilo div middleContent*/
-
-#middleContent {
-    width: 1024px;
-}
 
 .specialtiesFigures {
     display: flex;
@@ -230,6 +231,85 @@ header {
 
 }
 /* Fim - Estilo div clinicalContact */
+
+/* Inicio - Estilo page specialties*/
+#specialtiesHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigationSpecialties a {
+    font-size: 1.2em;
+    margin: 10px;
+
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #00cad1;
+}
+
+.navigationSpecialties a:hover {
+    color: blue;
+}
+
+.specialtiesTitle {
+    margin: 30px 0px;
+}
+
+.specialtiesSchedules {
+    display: flex;
+    height: 200px;
+    margin: 10px 0px 50px 0px;
+}
+
+.specialtiesSchedules img {
+    height: 100%;
+    width: 250px;
+}
+
+.specialtiesSchedules table {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.specialtiesSchedules table thead {
+    background-color: #00cad1;
+}
+
+.specialtiesSchedules table th {
+    color: white;
+    text-align: start;
+    padding: 10px;
+}
+
+.specialtiesSchedules table td {
+   text-align: start;
+   padding: 5px;
+   font-size: 1.1em;
+   font-weight: 510;
+}
+
+.specialtiesSchedules table tbody tr:nth-child(1n){
+    background-color: #cdcdcd;
+}
+
+.specialtiesSchedules table tbody tr:nth-child(2n){
+    background-color: #f1f1f1;
+    }
+
+.specialtyImage {
+    width: 250;
+}
+
+.timeTableSpecialties {
+    width: calc(100% - 250px);
+}
+
+/* Fim - Estilo page specialties*/
 /* ------ Fim - Estilo Conteudo ------ */
 
 /* ------ Inicio - Estilo Rodapé ------ */
@@ -240,8 +320,6 @@ footer {
 }
 
 .footer  {
-    width: 1024px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,5 +402,20 @@ footer {
 @media (max-width: 920px) {
     .specialtiesFigures figure {
         margin: 20px 20px 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .specialtiesSchedules{
+         display: flex;
+         justify-content: center;
+     }
+    
+     .specialtiesSchedules img {
+        display: none;
+    }
+    
+    .specialtiesSchedules table {
+        width: 100%;
     }
 }
